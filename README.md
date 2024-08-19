@@ -9,3 +9,10 @@ While I have no where the buisness connections to create a true $1 board, this k
 
 [![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/vt5fpE0bzSY)
 
+This video will help you through the build process of the board. If you wish to have a writeup, [this]() is a link to the build how-to PDF. Those who purchase this kit will have also have a physical manual.
+
+## Environtment Setup
+### Arduino IDE
+The 
+
+### Microchip Studio'
