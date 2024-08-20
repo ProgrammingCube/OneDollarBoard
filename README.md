@@ -12,6 +12,8 @@ While I have no where the buisness connections to create a true $1 board, this k
 This video will help you through the build process of the board. If you wish to have a writeup, [this]() is a link to the build how-to PDF. Those who purchase this kit will have also have a physical manual.
 
 ## Arduino IDE Setup
+[Download Arduino IDE]()
+
 In order to use this board seamlessly with the Arduino IDE, you need to install the Digispark Boards. These boards seem to be discontinued, but the json file is still extant.
 
 Simply go to `File >> Preferencess` and click on the `Additional Boards Manager URLs` to add this entry:
@@ -32,6 +34,7 @@ Once you have the board installed, select the correct board by doing `Tools >> B
 **IF YOU CAN'T UPLOAD CODE AND YOU GET A MESSAGE WITH ONLY 60% UPLOADED, CHECK YOUR PROGRAMMER SELECTION** For some reason, Arduino IDE likes to deselect this.
 
 ## Microchip Studio Setup
+[Download Microchip Studio]()
 
 Setup is a bit more nuanced, and it can be a bit more difficult if your computer setup is different. However, the setup is almost the same!
 
@@ -52,7 +55,6 @@ In the `Output` window, you should see something like this:
 `C:\Users\yourusername\AppData\Local\Arduino15\packages\digistump\tools\micronucleus\2.0a4/launcher.exe`
 
 or wherever you have installed Arduino IDE. Copy this text to the `Command` field in the `External Tools...` window.
-
 
 Next, you can copy this text directly to the `Arguments` field:
 
