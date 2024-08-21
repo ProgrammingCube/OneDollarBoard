@@ -25,8 +25,8 @@ int main(void)
 {
 	DDRB = 0x0F;							// Set lower 4 pins to OUTPUT
 	PORTB = 0x00;							// Set all pins LOW
-    while (1)
-    {
+	while (1)
+	{
 		PORTB = 0x01;						// Turn motor A clockwise for 2 seconds
 		delay( 2000 );
 
