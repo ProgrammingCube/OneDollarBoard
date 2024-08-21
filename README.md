@@ -12,7 +12,7 @@ While I have no where the buisness connections to create a true $1 board, this k
 This video will help you through the build process of the board. If you wish to have a writeup, [this]() is a link to the build how-to PDF. Those who purchase this kit will have also have a physical manual.
 
 ## Arduino IDE Setup
-[Download Arduino IDE]()
+[Download Arduino IDE](https://www.arduino.cc/en/software)
 
 In order to use this board seamlessly with the Arduino IDE, you need to install the Digispark Boards. These boards seem to be discontinued, but the json file is still extant.
 
@@ -25,16 +25,16 @@ Click on OK.
 Then, go `Tools >> Board... >> Boards Manager`. From here, search `Digistump`. Install the Digistump AVR Boards package. Accept any driver installs, we need these to talk to the boards because we are using a special bootloader.
 
 #### Special note on the Bootloader***
-Your ATtiny85 comes with a bootloader preinstalled, the [Micronucleus]() bootloader. This allows one to program the chip via USB instead of using a middle-man ISP. You can still use an ISP if you want though, and its easy enough to flash back to the Micronucleus bootloader.
+Your ATtiny85 comes with a bootloader preinstalled, the [Micronucleus](https://github.com/SpenceKonde/ATTinyCore/blob/v2.0.0-devThis-is-the-head-submit-PRs-against-this/avr/extras/Ref_Micronucleus.md) bootloader. This allows one to program the chip via USB instead of using a middle-man ISP. You can still use an ISP if you want though, and its easy enough to flash back to the Micronucleus bootloader.
 
-Here is the [link]() for the Micronucleus bootloader I have used. You can use a different one if you want, or if you're good enough, you can [write your own]()!
+Here is the [link](https://github.com/ashishchoudhary9998/ATtiny85-Boot-loader) for the Micronucleus bootloader I have used. You can use a different one if you want, or if you're good enough, you can [make your own](https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ApplicationNotes/ApplicationNotes/Basic-Bootloader-for-AVR-MCU-DA-Family-DS00003341C.pdf) or even [write it in C](https://github.com/m3y54m/simple-avr-bootloader) !
 
 
 Once you have the board installed, select the correct board by doing `Tools >> Boards... >> Digistump AVR Boards >> Digispark (Default, 16.5mhz)`. Then select `Tools >> Programmer >> Micronucleus`.
 **IF YOU CAN'T UPLOAD CODE AND YOU GET A MESSAGE WITH ONLY 60% UPLOADED, CHECK YOUR PROGRAMMER SELECTION** For some reason, Arduino IDE likes to deselect this.
 
 ## Microchip Studio Setup
-[Download Microchip Studio]()
+[Download Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio#Downloads)
 
 Setup is a bit more nuanced, and it can be a bit more difficult if your computer setup is different. However, the setup is almost the same!
 
@@ -68,7 +68,7 @@ Next, we need to change the `Initial Directory` field. This directory will be th
 
 There's a strange bug in Microchip Studio in which spaces in the directory aren't handled right, so we'll do this to avoid problems.
 
-Perfect! Now, when you use Microchip Studio, you can press `F7` to compile/assemble your program, then use `Tools >> your-external-tool` to upload! If you're good, you can [keybind your tool]()!
+Perfect! Now, when you use Microchip Studio, you can press `F7` to compile/assemble your program, then use `Tools >> your-external-tool` to upload! If you're good, you can [keybind your tool](https://onlinedocs.microchip.com/pr/GUID-ECD8A826-B1DA-44FC-BE0B-5A53418A47BD-en-US-12/index.html?GUID-A8EAD702-6D06-4931-9F49-AFE189F48A73)!
 # FAQ
 ### The PWR LED doesn’t turn on!!!
 - Check to make sure the power LED is installed the right way round. The molded flat plastic should be facing USER RIGHT.
