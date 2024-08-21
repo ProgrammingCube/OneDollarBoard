@@ -69,24 +69,17 @@ Next, we need to change the `Initial Directory` field. This directory will be th
 There's a strange bug in Microchip Studio in which spaces in the directory aren't handled right, so we'll do this to avoid problems.
 
 Perfect! Now, when you use Microchip Studio, you can press `F7` to compile/assemble your program, then use `Tools >> your-external-tool` to upload! If you're good, you can [keybind your tool]()!
-
 # FAQ
 ### The PWR LED doesn’t turn on!!!
-
-    • Check to make sure the power LED is installed the right way round. The molded flat plastic should be facing USER RIGHT.
-    • Double-check your USB connector solder joints. This LED is a direct power to ground connection, so if this doesn’t turn on, something simple is wrong.
-    • If your computer pops a message saying Overcurrent Detection, you may have a short in the upper-left quadrant of your board, or a short on the ATtiny85 IC socket. Ensure that all solder joints are isolated.
-      
+- Check to make sure the power LED is installed the right way round. The molded flat plastic should be facing USER RIGHT.
+- Double-check your USB connector solder joints. This LED is a direct power to ground connection, so if this doesn’t turn on, something simple is wrong.
+- If your computer pops a message saying Overcurrent Detection, you may have a short in the upper-left quadrant of your board, or a short on the ATtiny85 IC socket. Ensure that all solder joints are isolated.
 ### The PB0 LED doesn’t blink!!!1!
-
 Unfortunately, there can be many causes for this problem.
-
-    • Check if the LEDs are installed the right way round. The molded flat plastic should be facing USER RIGHT.
-    • Be sure that the ATtiny85 is installed correctly. Its index notch should be facing USER LEFT. Also, make sure its pins aren’t bent or sticking out from the socket.
-    • Double-check your soldering of the ATtiny85 IC socket. You wouldn’t believe how many times veteran hobbyists forget to solder entire chips!
-
+- Check if the LEDs are installed the right way round. The molded flat plastic should be facing USER RIGHT.
+- Be sure that the ATtiny85 is installed correctly. Its index notch should be facing USER LEFT. Also, make sure its pins aren’t bent or sticking out from the socket.
+- Double-check your soldering of the ATtiny85 IC socket. You wouldn’t believe how many times veteran hobbyists forget to solder entire chips!
 ### When I start using the other chips, nothing works!
-
-    • Check to see if there are shorts on the IC sockets.
-    • Check if the LD117V33 regulator is installed correctly. Refer to the images.
-    • Be careful on where you plug power and data cables. By design, this board is EXTREMELY flexible. I have tried to do my best to make the silkscreen clear, but it is still possible to accidentally switch around power and data pins. Refer to the pinout diagrams.
+- Check to see if there are shorts on the IC sockets.
+- Check if the LD117V33 regulator is installed correctly. Refer to the images.
+- Be careful on where you plug power and data cables. By design, this board is EXTREMELY flexible. I have tried to do my best to make the silkscreen clear, but it is still possible to accidentally switch around power and data pins. Refer to the pinout diagrams.
